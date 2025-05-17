@@ -1,0 +1,239 @@
+{
+	"info": {
+		"_postman_id": "fc500709-7c0b-4dc4-bfcb-2ed36265aa3e",
+		"name": "food api golang",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39131930"
+	},
+	"item": [
+		{
+			"name": "Product List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Product List",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 05:38:26 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "666"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": \"1\",\n            \"name\": \"Waffle with Berries\",\n            \"price\": 6.5,\n            \"category\": \"Waffle\"\n        },\n        {\n            \"id\": \"2\",\n            \"name\": \"Vanilla Bean Crème Brûlée\",\n            \"price\": 7,\n            \"category\": \"Crème Brûlée\"\n        },\n        {\n            \"id\": \"3\",\n            \"name\": \"Macaron Mix of Five\",\n            \"price\": 8,\n            \"category\": \"Macaron\"\n        },\n        {\n            \"id\": \"4\",\n            \"name\": \"Classic Tiramisu\",\n            \"price\": 5.5,\n            \"category\": \"Tiramisu\"\n        },\n        {\n            \"id\": \"5\",\n            \"name\": \"Pistachio Baklava\",\n            \"price\": 4,\n            \"category\": \"Baklava\"\n        },\n        {\n            \"id\": \"6\",\n            \"name\": \"Lemon Meringue Pie\",\n            \"price\": 5,\n            \"category\": \"Pie\"\n        },\n        {\n            \"id\": \"7\",\n            \"name\": \"Red Velvet Cake\",\n            \"price\": 4.5,\n            \"category\": \"Cake\"\n        },\n        {\n            \"id\": \"8\",\n            \"name\": \"Salted Caramel Brownie\",\n            \"price\": 4.5,\n            \"category\": \"Brownie\"\n        },\n        {\n            \"id\": \"9\",\n            \"name\": \"Vanilla Panna Cotta\",\n            \"price\": 6.5,\n            \"category\": \"Panna Cotta\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "single product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/products/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Single Product",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 05:41:46 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "96"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"2\",\n        \"name\": \"Vanilla Bean Crème Brûlée\",\n        \"price\": 7,\n        \"category\": \"Crème Brûlée\"\n    }\n}"
+				},
+				{
+					"name": "Product List Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/products/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"products",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 06:10:18 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "96"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"id\": \"2\",\n        \"name\": \"Vanilla Bean Crème Brûlée\",\n        \"price\": 7,\n        \"category\": \"Crème Brûlée\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"couponCode\": \"FIFTYOFF\",\r\n  \"items\": [\r\n    {\r\n      \"productId\": \"2\",\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"productId\": \"3\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "single product Copy",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"couponCode\": \"SUPER100\",\r\n  \"items\": [\r\n    {\r\n      \"productId\": \"10\",\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"productId\": \"15\",\r\n      \"quantity\": 1\r\n    }\r\n  ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"orders"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 17 May 2025 07:29:22 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "95"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"details\": \"promo code not valid in at least two coupon files\",\n    \"error\": \"Order creation failed\"\n}"
+				}
+			]
+		}
+	]
+}
