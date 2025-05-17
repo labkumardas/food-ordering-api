@@ -31,8 +31,9 @@ It supports product listing, order placement with promo code validation, and fol
 1. Clone the repository:
 
    ```bash
-   git clone git@github.com:labkumardas/food-ordering-api.git
+   for clone : git clone git@github.com:labkumardas/food-ordering-api.git
    https://github.com/labkumardas/food-ordering-api.git
+   repo : https://github.com/labkumardas/food-ordering-api
   
 
 
