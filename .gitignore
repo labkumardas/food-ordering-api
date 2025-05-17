@@ -1,0 +1,16 @@
+# Ignore environment variable file
+#.env
+
+# Ignore resource files (promo code coupon bases)
+resources/
+
+# Ignore binaries and temp files
+bin/
+*.exe
+*.log
+*.out
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+*.swp
